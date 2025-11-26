@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 1: Форма</title>
+    <style>
+        .error { border: 2px solid red; }
+        .success { border: 2px solid green; }
+
+        #output {
+            margin-left: 40px;
+            padding: 10px;
+            border: 2px solid #000;
+            width: 300px;
+            min-height: 150px;
+        }
+
+        .text-error {
+            color: red;
+            font-weight: bold;
+        }
+
+        .text-success {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex; gap: 40px;">
+        <div>
+            <h1>Форма для заповнення</h1>
+            <form id="myForm">
+                <label>ПІБ (ТТТТТТ Т.Т.): <input type="text" id="pib" required></label><br>
+                <label>Варіант (XX): <input type="text" id="variant" required></label><br>
+                <label>Телефон ((ЧЧЧ)-ЧЧЧ-ЧЧ-ЧЧ): <input type="text" id="phone" required></label><br>
+                <label>Факультет (ТТТТ): <input type="text" id="faculty" required></label><br>
+                <label>Адреса (м. ...): <input type="text" id="address" required></label><br>
+                <input type="submit" value="Перевірити">
+            </form>
+        </div>
+
+        <div id="output">
+            <h3>Вивід інформації:</h3>
+            <div id="outputContent"></div>
+        </div>
+    </div>
+
+    <script src="task1.js"></script>
+</body>
+</html>
